@@ -43,5 +43,9 @@ public class Program {
             System.out.println(seller2);
         }
 
+        System.out.println("=== TEST 4: seller insert ===");
+        Seller seller3 = new Seller(null, "Wagner", "wagner@email.com", new Date(), 4000.0, department);
+        sellerDao.insert(seller3);
+        System.out.println("Insert! New id= " + seller3.getId());
     }
 }
